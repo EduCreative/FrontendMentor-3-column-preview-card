@@ -33,11 +33,11 @@
         justify-content: center;
         align-items: center;
         min-height: 100vh;
-        min-width: 100vw;
+        /* min-width: 100vw; */
         border: 2px solid red;
       }
 
-      .container {
+      main {
         display: flex;
         flex-direction: column;
         width: 90%;
@@ -146,7 +146,7 @@
           align-items: center;
           min-height: 100vh;
         }
-        .container {
+        main {
           display: flex;
           flex-direction: row;
           justify-content: center;
@@ -201,7 +201,7 @@
     </style>
   </head>
   <body>
-    <div class="container">
+    <main role="main">
       <div class="sedans">
         <div class="content">
           <div class="icons">
@@ -243,9 +243,9 @@
           <input class="btn-Luxury" type="button" value="Learn More" />
         </div>
       </div>
-    </div>
+    </main>
 
-    <footer>
+    <footer role="contentinfo">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
