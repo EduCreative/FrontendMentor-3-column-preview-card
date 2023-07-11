@@ -42,8 +42,8 @@ Desktop View:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution URL](https://github.com/EduCreative/FrontendMentor-3-column-preview-card.git)
+- Live Site URL: [Live site URL](https://educreative.github.io/FrontendMentor-3-column-preview-card/)
 
 ## My process
 
