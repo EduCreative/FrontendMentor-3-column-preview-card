@@ -28,12 +28,14 @@ Users should be able to:
 ### Screenshot
 
 Mobile View:
-![Mobile1](./mobile1.png)
-![Mobile2](./mobile2.png)
+![Mobile1](./Mobile1.png)
+
+![Mobile2](./Mobile2.png)
 
 
 Desktop View:
 ![Desktop1](./Desktop1.png)
+
 ![Desktop2](./Desktop2.png)
 
 ### Links
