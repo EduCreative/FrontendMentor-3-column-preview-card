@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | 3-column preview card component</title>
+
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Lexend Deca", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-width: 100vw;
+        border: 2px solid red;
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        margin: 25% 10%;
+        /* border: 0.1rem solid yellow; */
+      }
+      .content {
+        width: 16rem;
+        height: 24rem;
+      }
+
+      .icons > img {
+        height: 3rem;
+        width: 5rem;
+        margin-bottom: 2rem;
+      }
+
+      h1 {
+        font-family: "Big Shoulders Display", cursive;
+        font-weight: 700;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+        margin: 1rem 0;
+      }
+
+      p {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-weight: 400;
+        line-height: 1.6rem;
+      }
+
+      .sedans {
+        background-color: hsl(31, 77%, 52%);
+        border-radius: 10px 10px 0 0;
+        padding: 15%;
+      }
+
+      .SUVs {
+        background-color: hsl(184, 100%, 22%);
+        padding: 15%;
+      }
+
+      .Luxury {
+        background-color: hsl(179, 100%, 13%);
+        border-radius: 0 0 10px 10px;
+        padding: 15%;
+      }
+
+      .content {
+      }
+
+      input {
+        font-weight: 400;
+        padding: 0.8rem 2rem;
+        border: none;
+        border-radius: 10rem;
+        margin: 1.5rem 0;
+        border: 0.1em solid white;
+        cursor: pointer;
+      }
+
+      .btn-Sadan {
+        color: hsl(31, 77%, 52%);
+      }
+
+      .btn-Sadan:hover {
+        color: white;
+        background-color: hsl(31, 77%, 52%);
+      }
+
+      .btn-SUVs {
+        color: hsl(184, 100%, 22%);
+      }
+
+      .btn-SUVs:hover {
+        color: white;
+        background-color: hsl(184, 100%, 22%);
+      }
+
+      .btn-Luxury {
+        color: hsl(179, 100%, 13%);
+      }
+      .btn-Luxury:hover {
+        color: white;
+        background-color: hsl(179, 100%, 13%);
+      }
+
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        margin: -5rem 5rem;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+
+      @media only screen and (min-width: 980px) {
+        * {
+          font-size: 15px;
+        }
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+        }
+        .container {
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          margin: 28%;
+          /* border: 1px solid blue; */
+        }
+
+        .content {
+          width: 14.2rem;
+          height: 28rem;
+          /* border: 1px solid red; */
+        }
+
+        .sedans {
+          background-color: hsl(31, 77%, 52%);
+          border-radius: 10px 0 0 10px;
+          padding: 3rem 5rem;
+        }
+
+        .SUVs {
+          background-color: hsl(184, 100%, 22%);
+          padding: 3rem 5rem;
+        }
+
+        .Luxury {
+          background-color: hsl(179, 100%, 13%);
+          border-radius: 0 10px 10px 0;
+          padding: 3rem 5rem;
+        }
+
+        .icons > img {
+          height: 3rem;
+          width: 4.5rem;
+          margin-bottom: 1rem;
+        }
+
+        h1 {
+          font-size: 2.5rem;
+          margin: 1.5rem 0;
+        }
+
+        input {
+          padding: 1rem 2rem;
+          margin: 6rem 0;
+        }
+
+        .attribution {          
+          margin: -20rem 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sedans">
+        <div class="content">
+          <div class="icons">
+            <img src="./images/icon-sedans.svg" alt="Icon Sadan" />
+          </div>
+          <h1>Sedans</h1>
+          <p>
+            Choose a sedan for its affordability and excellent fuel economy.
+            Ideal for cruising in the city or o n your next road trip.
+          </p>
+          <input class="btn-Sadan" type="button" value="Learn More" />
+        </div>
+      </div>
+
+      <div class="SUVs">
+        <div class="content">
+          <div class="icons">
+            <img src="./images/icon-suvs.svg" alt="Icon SUVs" />
+          </div>
+          <h1>SUVs</h1>
+          <p>
+            Take an SUV for its spacious interior, power, and versatility.
+            Perfect for your next family vacation and off-road adventures.
+          </p>
+          <input class="btn-SUVs" type="button" value="Learn More" />
+        </div>
+      </div>
+
+      <div class="Luxury">
+        <div class="content">
+          <div class="icons">
+            <img src="./images/icon-luxury.svg" alt="Icon Luxury" />
+          </div>
+          <h1>Luxury</h1>
+          <p>
+            Cruise in the best car brands without the bloated prices. Enjoy the
+            enhanced comfort of a luxury rental and arrive in style.
+          </p>
+          <input class="btn-Luxury" type="button" value="Learn More" />
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">MASROOR KHAN</a>.
+      </div>
+    </footer>
+  </body>
+</html>
